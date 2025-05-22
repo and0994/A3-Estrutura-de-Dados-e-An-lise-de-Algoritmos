@@ -15,6 +15,7 @@ public class LogisticaPortuaria {
         int limiteCaminhao = scanner.nextInt();
 
         System.out.print("Insira os volumes dos containers, por favor, digite os valores separados por espaço, ex: 10 20 30: ");
+
         scanner.nextLine();
 
         String[] entradaVolumes = scanner.nextLine().split(" ");
