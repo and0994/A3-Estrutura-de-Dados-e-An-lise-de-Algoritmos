@@ -1,4 +1,4 @@
-<h1>Analise de Complexidade do algoritmo</h1>
+<h1>Analise de Complexidade do algoritmo Big-O</h1>
 
 <h2>Ordenação dos containers</h2> 
 <h3>containers.sort(Collections.reverseOrder());</h3> 
@@ -16,10 +16,10 @@ Iteramos sobre todas as cargas (O(n)) e pode ser necessário percorrê-las vári
 <h2>Ordenação:</h2> <h3>O(n log n)</h3>
 <h2>Alocação nos armazéns:</h2><h3>O(n × m)</h3>
 <h2>Alocação nos caminhões:</h2> <h3>O(n × k)</h3>
- <h2>Melhor cenário (Best Case)</h2>
-<h3>Se m e k forem pequenos e bem distribuídos, a complexidade dominante será O(n log n).</h3>
- <h2>Caso médio (Average Case)</h2>
-<h3>Se m e k crescem proporcionalmente a n, a complexidade pode se aproximar de O(n²).</h3>
- <h2>Pior caso (Worst Case)</h2>
-<h3>Se o número de armazéns e caminhões cresce quase linearmente com n, o tempo pode ser O(n²).
-</h3>
+<h2>Melhor cenário (Best Case)</h2>
+Se M e K forem pequenos e bem distribuídos, a complexidade dominante será O(n log n).
+<h2>Caso médio (Average Case)</h2>
+Se M e K crescerem proporcionalmente a N, a complexidade pode se aproximar de O(n²).
+<h2>Pior caso (Worst Case)</h2>
+Se o número de armazéns e caminhões cresce quase linearmente com n, o tempo pode ser O(n²).
+
