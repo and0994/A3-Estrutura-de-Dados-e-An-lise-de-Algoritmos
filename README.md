@@ -29,7 +29,10 @@
 <h2>4. Análise de Complexidade</h2>
 
 <h3>Ordenação dos Contêineres</h3>
-<p> Realizado nessa parte do código <strong>containers.sort(Collections.reverseOrder())</strong>.
+<p> Realizado nessa parte do código:</p>
+<pre><code>
+containers.sort(Collections.reverseOrder())
+</code></pre>
 <p>O <strong>Collections.sort()</strong> em Java utiliza o Timsort que tem a complexidade no pior caso de <strong>O(n log n)</strong>.</p>
 <p>Então para conseguir alocar os containers em order decrescente antes de alocar nos armazens é preciso:</p>
 <ul>
@@ -40,13 +43,16 @@
 
 <h3>Alocação em Armazéns de Contêineres</h3>
 <p> Realizado nessa parte do código:</p>
-<p>for (int volume : containers) {</p>
-<p>    for (Armazem armazem : armazens) {</p>
-<p>        if (armazem.adicionarContainer(volume)) {</p>
-<p>            break;</p>
-<p>        }</p>
-<p>    }</p>
-<p>}</p>
+<pre><code>
+for (int volume : containers) {
+    for (Armazem armazem : armazens) {
+        if (armazem.adicionarContainer(volume)) {
+            break;
+        }
+    }
+}
+</code></pre>
+
 
 <p>O objetivo é que para cada contêiner, tenta encontrar um armazém que ainda não esteja cheio, caso não encontre, cria um novo, então:</p>
 <ul>
