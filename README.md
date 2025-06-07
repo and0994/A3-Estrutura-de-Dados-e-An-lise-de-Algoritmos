@@ -4,22 +4,22 @@
 <p>O objetivo desta atividade é fornecer uma análise e planos para resolver e desenvolver nosso algoritmo proposto para o Projeto A3 de Estrutura de Dados e Análise de Algoritmos, concentrando-se em como os contêineres podem ser distribuídos eficientemente em armazéns e cargas em caminhões.</p>
 
 <h2>1. Identificação da Complexidade do Problema</h2>
-<p>Esta questão que estamos abordando nesse projeto é muito semelhante ao <strong>Problema de Empacotamento</strong>, que é <strong>NP-Completo</strong>.</p>
+<p>A questão que estamos abordando nesse projeto é muito semelhante ao <strong>Problema de Empacotamento</strong>, que é <strong>NP-Completo</strong>.</p>
 <ol>
 <li>Evitar que os armazéns e caminhões tenham cargas de contêineres alocadas de maneira ineficiente.</li>
 <li>Soluções genéricas para o Problema de Empacotamento, um problema clássico NP-Completo, portanto, também podemos classificar esse problema como <strong>NP-Completo</strong>.</li>
 </ol>
 
 <h2>2. Estratégias Sugeridas de Resolução</h2>
-<p>Indetificamos que a melhor estratégia para resolver o problema é a <strong>abordagem gulosa</strong> por alguns motivos, como:</p>
+<p>Indentificamos que a melhor estratégia para resolver o problema é a <strong>abordagem gulosa</strong> por alguns motivos, como:</p>
 <ol>
-<li>Programação dinâmica ou força bruta, não são boas opções para grandes quantidades de dados por conta da alta complexidade.</li>
-<li>A abordagem gulosa é eficiente, pois, tenta adicionar primeiro os maiores contêineres, assim utiliza o espaço de forma mais eficiente.</li>
+<li>Programação dinâmica ou força bruta não são boas opções para grandes quantidades de dados por conta da alta complexidade.</li>
+<li>A abordagem gulosa é eficiente,pois tenta adicionar primeiro os maiores contêineres, dessa forma, utiliza o espaço de forma mais eficiente.</li>
 <li>É uma abordagem é fácil de implementar e tem resultados que correspondem ao solicitado.</li>
 </ol>
 
 <h2>3. Desenvolvimento do Algoritmo</h2>
-<p>O algoritmo foi desenvolvido na linguagem Java, usando técnicas de ordenação em ordem crescente de tamanho e realizando a alocação e,m armazéns e caminhões em sequencia. Os os passos que foram considerados os melhores para a composição do algoritmo foram:</p>
+<p>O algoritmo foi desenvolvido na linguagem Java, usando técnicas de ordenação em ordem crescente de tamanho e realizando a alocação em armazéns e caminhões em sequencia. Os passos que foram considerados os melhores para a composição do algoritmo foram:</p>
 <ul>
 <li>Ordenar os contêineres em ordem decrescente.</li>
 <li>Para cada contêiner, verificar se ele cabe em algum armazém,se sim, realizar a alocação.</li>
@@ -57,7 +57,7 @@ for (int volume : containers) {
 <p>O objetivo é que para cada contêiner, tenta encontrar um armazém que ainda não esteja cheio, caso não encontre, cria um novo, então:</p>
 <ul>
 <li>Passa por todos os <strong>n</strong> containêres.</li>
-<li>Para cada containêr, percorre todos on <strong>m</strong> armazéns que existem até encontrar um que suporte o volume do containêr. No pior caso não vai caber em nenhum e por isso vai precisar criar um novo</li>
+<li>Para cada containêr, percorre todos os <strong>m</strong> armazéns que existem até encontrar um que suporte o volume do containêr. No pior caso não vai caber em nenhum e por isso vai precisar criar um novo</li>
 </ul>
 <p>O número de armazéns pode subir de forma proporcional a de containêres, então a complexidade é de <strong>O(n x m).</strong>
 
