@@ -57,16 +57,18 @@
 
 <h3>Distribuição de Carga nos Caminhões</h3>
 <p>Referente a essa parte do código:</p>
-<p>while (!cargasRestantes.isEmpty()) {</p>
-<p>    for (i = 0; i < cargasRestantes.size();) {</p>
-<p>        if (carga <= restante) {</p>
-<p>            remover</p>
-<p>        } else {</p>
-<p>            fracionar</p>
-<p>            break;</p>
-<p>        }</p>
-<p>    }</p>
-<p>}</p>
+<pre><code>
+while (!cargasRestantes.isEmpty()) {
+    for (i = 0; i < cargasRestantes.size();) {
+        if (carga <= restante) {
+            remover
+        } else {
+            fracionar
+            break;
+        }
+    }
+}
+</code></pre>
 <p>Pega a carga de cada caminhão e realiza a alocação em caminhôes até o limite, caso ultrapasse realiza o fracionamento e continua o processo</p>
 <ul>
 <li>O número de armazéns é m</li>
